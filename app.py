@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def generateSentence():
 	sentence = weightedWordGenerator.generateSentenceFromTextfile('sampleText.txt')
-    return sentence
+	return sentence
 
 # next step: make it possible to upload a text file then generate sentence from that corpus
 
